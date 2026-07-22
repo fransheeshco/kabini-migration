@@ -1,0 +1,61 @@
+{
+  "_instructions": [
+    "CSV columns map to exact Webflow CMS field slugs from collection-schema.json.",
+    "Run python3 migrate.py inspect after changing the Webflow CMS schema.",
+    "The title column populates both Name and Gallery Name.",
+    "The migration script converts plain text to Rich Text HTML automatically.",
+    "Author and Tags values are resolved to existing Webflow CMS item IDs.",
+    "Photos are loaded from ../tod-gallery-images/<slug>/ recursively.",
+    "The highest-quality uploadable variant of each WordPress image is retained.",
+    "A filename containing G<number>, such as 099-G3-Icon, is used as Hero Image.",
+    "The hero image is excluded from Gallery Images."
+  ],
+  "fields": {
+    "title": [
+      "name",
+      "gallery-name"
+    ],
+    "slug": "slug",
+    "author": "author-2",
+    "publish_date": "publish-date",
+    "status": null,
+    "url": "url",
+    "excerpt": "excerpt",
+    "introduction": "introduction",
+    "discussion_content": "body-2",
+    "special_feature_title": "special-feature-title",
+    "special_feature_author": "special-feature-author",
+    "special_feature_content": "special-feature-content-2",
+    "categories": null,
+    "tags": "tags",
+    "parse_method": null,
+    "parse_warning": null
+  },
+  "references": {
+    "author_csv_column": "author",
+    "author_field": "author-2",
+    "author_aliases": {
+      "user": "The Kabilin Center",
+      "tkc_admin": "The Kabilin Center",
+      "tkc admin": "The Kabilin Center",
+      "admin": "The Kabilin Center",
+      "administrator": "The Kabilin Center"
+    },
+    "tags_csv_column": "tags",
+    "tags_field": "tags",
+    "tag_aliases": {}
+  },
+  "preserve_spreadsheet_status": false,
+  "published_status_values": [
+    "publish",
+    "published"
+  ],
+  "images": {
+    "root": "../tod-gallery-images",
+    "main_image_field": "hero-image",
+    "gallery_field": "gallery-images",
+    "hero_pattern": "(?:^|[-_])G\\d+(?:[-_]|$)",
+    "required": true,
+    "max_gallery_images": 25
+  }
+}
