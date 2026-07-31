@@ -1,0 +1,205 @@
+{
+  "id": "6a667932b6dcc4a8a905e336",
+  "displayName": "TOD Gallery Photos",
+  "singularName": "TOD Gallery Photo",
+  "slug": "tod-gallery-photos",
+  "createdOn": "2026-07-26T21:16:34.104Z",
+  "lastUpdated": "2026-07-27T17:46:51.242Z",
+  "fields": [
+    {
+      "id": "d00ea262ad4ceb9f70d1a87fde1cbc4c",
+      "isEditable": true,
+      "isRequired": false,
+      "type": "Image",
+      "slug": "photo",
+      "displayName": "Photo",
+      "helpText": null,
+      "validations": null
+    },
+    {
+      "id": "349ac03404ba2d43ffbbc41d37b35cf6",
+      "isEditable": true,
+      "isRequired": true,
+      "type": "Reference",
+      "slug": "tod-gallery",
+      "displayName": "TOD Gallery",
+      "helpText": null,
+      "validations": {
+        "collectionId": "6a4128a6e922541887044952"
+      }
+    },
+    {
+      "id": "029e81f76b10daec7d8cf98ce15ea4a7",
+      "isEditable": true,
+      "isRequired": false,
+      "type": "Link",
+      "slug": "destination-url",
+      "displayName": "Destination URL",
+      "helpText": null,
+      "validations": null
+    },
+    {
+      "id": "1495735d02fc125ac4f7d48b40df39ff",
+      "isEditable": true,
+      "isRequired": false,
+      "type": "Number",
+      "slug": "sort-order",
+      "displayName": "Sort Order",
+      "helpText": null,
+      "validations": {
+        "format": "integer",
+        "precision": 1,
+        "allowNegative": false
+      }
+    },
+    {
+      "id": "b7a3b0c922305744542852f68c005553",
+      "isEditable": true,
+      "isRequired": false,
+      "type": "PlainText",
+      "slug": "alt-text",
+      "displayName": "Alt Text",
+      "helpText": null,
+      "validations": {
+        "singleLine": true
+      }
+    },
+    {
+      "id": "201ed300c00d031d2d960a5161c24033",
+      "isEditable": true,
+      "isRequired": false,
+      "type": "PlainText",
+      "slug": "caption",
+      "displayName": "Caption",
+      "helpText": null,
+      "validations": {
+        "singleLine": true
+      }
+    },
+    {
+      "id": "0c11db6c0286e8c06b42a76fd48f47b9",
+      "isEditable": true,
+      "isRequired": false,
+      "type": "PlainText",
+      "slug": "description",
+      "displayName": "Description",
+      "helpText": null,
+      "validations": {
+        "singleLine": true
+      }
+    },
+    {
+      "id": "3d53ff1b743e0a85450fb244ce52a1b0",
+      "isEditable": true,
+      "isRequired": false,
+      "type": "PlainText",
+      "slug": "location",
+      "displayName": "Location",
+      "helpText": null,
+      "validations": {
+        "singleLine": true
+      }
+    },
+    {
+      "id": "ac23c2d91b8e93c67a3df56f32a9ba7d",
+      "isEditable": true,
+      "isRequired": false,
+      "type": "PlainText",
+      "slug": "material",
+      "displayName": "Material",
+      "helpText": null,
+      "validations": {
+        "singleLine": true
+      }
+    },
+    {
+      "id": "bbc03271cdd346b214ebed06dae4f615",
+      "isEditable": true,
+      "isRequired": false,
+      "type": "PlainText",
+      "slug": "dimensions",
+      "displayName": "Dimensions",
+      "helpText": null,
+      "validations": {
+        "singleLine": true
+      }
+    },
+    {
+      "id": "2b511631c76108c1714e98ddd2a4c984",
+      "isEditable": true,
+      "isRequired": false,
+      "type": "PlainText",
+      "slug": "museum-or-collection",
+      "displayName": "Museum or Collection",
+      "helpText": null,
+      "validations": {
+        "singleLine": true
+      }
+    },
+    {
+      "id": "cafc18f8bc8ee250597441dcc21cbdb9",
+      "isEditable": true,
+      "isRequired": false,
+      "type": "PlainText",
+      "slug": "institution-or-owner",
+      "displayName": "Institution or Owner",
+      "helpText": null,
+      "validations": {
+        "singleLine": true
+      }
+    },
+    {
+      "id": "79f1f59dc401d2265bade6734121dd7f",
+      "isEditable": true,
+      "isRequired": false,
+      "type": "PlainText",
+      "slug": "accession-number",
+      "displayName": "Accession Number",
+      "helpText": null,
+      "validations": {
+        "singleLine": true
+      }
+    },
+    {
+      "id": "742320408010727689f8f2c17a47e872",
+      "isEditable": true,
+      "isRequired": false,
+      "type": "PlainText",
+      "slug": "date-or-century-2",
+      "displayName": "Date or Century",
+      "helpText": null,
+      "validations": {
+        "singleLine": true
+      }
+    },
+    {
+      "id": "96a9dac33ce8d3ed85cd61c7b0b05363",
+      "isEditable": true,
+      "isRequired": true,
+      "type": "PlainText",
+      "slug": "name",
+      "displayName": "Name",
+      "helpText": null,
+      "validations": {
+        "maxLength": 256
+      }
+    },
+    {
+      "id": "2537c21fc5a4180162ac46d5e34ba702",
+      "isEditable": true,
+      "isRequired": true,
+      "type": "PlainText",
+      "slug": "slug",
+      "displayName": "Slug",
+      "helpText": null,
+      "validations": {
+        "maxLength": 256,
+        "pattern": {},
+        "messages": {
+          "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+          "maxLength": "Must be less than 256 characters"
+        }
+      }
+    }
+  ]
+}

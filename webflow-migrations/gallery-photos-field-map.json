@@ -1,0 +1,29 @@
+{
+  "_instructions": [
+    "Targets are actual API slugs from gallery-photos-schema.json.",
+    "Null optional targets are populated automatically if matching fields are later added to Webflow."
+  ],
+  "fields": {
+    "name": "name",
+    "slug": "slug",
+    "photo": "photo",
+    "gallery_reference": "tod-gallery",
+    "destination_url": "destination-url",
+    "sort_order": "sort-order",
+    "alt_text": "alt-text",
+    "caption": "caption",
+    "description": "description",
+    "date_or_century": null,
+    "location": null,
+    "material": null,
+    "dimensions": null,
+    "museum_or_collection": null,
+    "institution_or_owner": null,
+    "accession_number": null,
+    "open_in_new_tab": null,
+    "original_image_url": null,
+    "original_destination_url": null,
+    "original_filename": null,
+    "parse_warning": null
+  }
+}
