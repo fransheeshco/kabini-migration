@@ -4,8 +4,6 @@
 **Handoff date:** 1 August 2026  
 **Status:** Migration and CMS relationships implemented; frontend styling remains
 
-> **Mandatory security action:** a Webflow API token used during development was exposed. Revoke it, create a replacement, and update only the ignored local `.env` before this repository is shared. The project must never contain real tokens, credentials, Authorization headers, API-response logs, or checkpoints.
-
 ---
 
 ## Executive summary
